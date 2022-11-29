@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { sendMessage, isTyping } from 'react-chat-engine';
-import { SendOutlined, PictureOutlined, ArrowRightOutlined, PlusOutlined } from '@ant-design/icons';
+import { ArrowRightOutlined, PlusOutlined } from '@ant-design/icons';
 
 const MessageForm = (props) => {
     const [value, setValue] = useState('');

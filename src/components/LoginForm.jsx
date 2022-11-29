@@ -5,6 +5,7 @@ import axios from 'axios';
 const LoginForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -24,14 +25,16 @@ const LoginForm = () => {
 
        } catch (error) {
             //if not -> error ... try again later/new username
+            setError('Incorrect username or password! Please try again');
        }
     }
 
     return (
         <div className='wrapper'>
+            {/* <h1 className='title'>Welcome to Chattipy Web Application</h1> */}
             <div className='form'>
-                <h1 className='title'>Chattipy Web Application</h1>
                 <form onSubmit={handleSubmit}>
+                    <label className='label'>Username</label>
                     <input 
                         type="text"
                         value={username}
@@ -40,7 +43,8 @@ const LoginForm = () => {
                         className='input'
                         required
                     />
-                       <input 
+                    <label className='label'>Password</label>
+                    <input 
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
@@ -53,6 +57,7 @@ const LoginForm = () => {
                             <span>Start Chatting</span>
                         </button>
                     </div>
+                    <h2 className='error'>{error}</h2>
                 </form>
             </div>
         </div>

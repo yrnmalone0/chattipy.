@@ -24,7 +24,7 @@
   }
   
   .ce-chat-subtitle-text {
-    color: #c9cccc !important;
+    color: #707272 !important;
   }
   
   .ce-chat-form-container {
@@ -98,10 +98,11 @@
   }
   
   .chat-subtitle {
-    color: rgb(130, 128, 128);
+    color: rgb(228, 226, 226);
     font-weight: 600;
     font-size: 12px;
     padding-top: 4px;
+    /* display: none; */
   }
   
   .message-row {
@@ -131,8 +132,8 @@
   .message {
     padding: 6px 9px;
     font-size: 13px;
-    border-radius: 3px;
-    max-width: 20%;
+    border-radius: 5px;
+    max-width: 65%;
     margin-top: .3rem;
   }
   
@@ -236,12 +237,9 @@
   
   .wrapper {
     height: 100vh;
-      width: 100%;
-    /* background: rgb(117,84,160);
-    background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);   */
-    background: rgb(26, 25, 28);
-    background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
-    display: flex;
+    width: 100%;
+    background: rgb(99, 95, 106);
+    display: flex; 
     justify-content: center;
     align-items: center;
   }
@@ -249,8 +247,8 @@
   .input {
     color: #333;
     font-size: 1.2rem;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
+    margin: .8rem auto 0 auto;
+    padding: 1.1rem 2rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
     border: none;
@@ -259,26 +257,38 @@
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
     outline: none;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   
   .form {
     width: 400px;
+    background-color: #5c575f;
+    padding: 3.2rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 6px;
+    border: 1px solid rgb(110, 108, 108);
+    /* margin: 5rem 0 0 46rem; */
   }
   
   .title {
-    text-align: center;
+    text-align: center; 
     color: white;
-    margin-bottom: 30px;
-    width: 100%;
-    font-size: 2.3em;;
+    /* padding: 11rem 0 0 0; */
+    width: 100%; 
+    font-size: 2.3em;
+  }
+
+  .label{
+    margin-left: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(24, 20, 27);
   }
   
   .button {
     border-radius: 4px;
     border: none;
-    background-color: white;
-    color: black;
+    background-color: rgb(35, 30, 39);
+    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
@@ -312,7 +322,8 @@
   }
   
   .error {
-    color: white;
+    color:rgb(212, 202, 217);
     text-align: center;
     margin-top: 20px;
+    font-size: 13px;
   }
