@@ -10,6 +10,7 @@
 
     return(
         <ChatEngine
+            // Passing the props
             height = "100vh"
             projectID = "85935044-d65e-4ef7-a173-0f5f32a14d8d"
             userName = {localStorage.getItem('username')}

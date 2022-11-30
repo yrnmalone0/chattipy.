@@ -9,14 +9,17 @@ const MessageForm = (props) => {
     const {chatId, creds} = props;
     
     const handleSubmit = (event) => {
+        // Avoiding browser refresh after submitting the form
         event.preventDefault();
 
         const text = value.trim();
+        // sendMessage if length > 0
         if (text.length > 0) sendMessage(creds, chatId, {text});
         setValue('');
     }
 
     const handleChange = (event) => {
+        // Get the value of input and store it
         setValue(event.target.value);
 
         isTyping(props, chatId);
@@ -30,7 +33,7 @@ const MessageForm = (props) => {
         <form className='message-form' onSubmit={handleSubmit}>
             <input  
                 className='message-input'
-                placeholder='send a message'
+                placeholder='Send a message...'
                 value = {value}
                 onChange={handleChange}
                 onSubmit={handleSubmit}

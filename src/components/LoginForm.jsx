@@ -14,6 +14,7 @@ const LoginForm = () => {
 
        try {
            //username + password => chatengine (to give msgs)
+        // Making requests using axios
             await axios.get('https://api.chatengine.io/chats', {headers: authObject});
 
             //if it works, -> logged in
