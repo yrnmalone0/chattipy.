@@ -15,6 +15,8 @@
             projectID = "85935044-d65e-4ef7-a173-0f5f32a14d8d"
             userName = {localStorage.getItem('username')}
             userSecret = {localStorage.getItem('password')}
+            // userName = "obedbadu"
+            // userSecret = "P@ssword"
             renderChatFeed = {(chatAppProps) => <ChatFeed { ...chatAppProps} />}
         />
     )
